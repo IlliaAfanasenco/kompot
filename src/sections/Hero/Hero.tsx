@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Hero.css";
+import heroImg from "../../assets/images/kompot-hero.jpeg"
 
 const Hero = () => {
     return (
@@ -44,19 +45,7 @@ const Hero = () => {
                 </div>
 
                 <div className="hero__visual" aria-hidden="true">
-                    <div className="hero__card">
-                        <div className="hero__cardTop" />
-                        <div className="hero__cardBody">
-                            <div className="hero__avatar" />
-                            <div className="hero__lines">
-                                <div className="hero__line hero__line--lg" />
-                                <div className="hero__line" />
-                                <div className="hero__line" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="hero__glow" />
+                    <img className="hero__image" src={heroImg} alt="Кот Компот"/>
                 </div>
             </div>
         </section>
