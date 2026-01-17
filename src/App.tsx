@@ -3,6 +3,7 @@ import MainLayouts from "./layouts/MainLayouts.tsx";
 import Home from "./pages/Home/Home.tsx";
 import About from "./pages/About/About.tsx";
 import Gallery from "./pages/Gallery/Gallery.tsx";
+import "./styles/main.css"
 
 
 const App = () => {

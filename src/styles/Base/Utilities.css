@@ -1,0 +1,19 @@
+.container {
+    width: min(var(--container), 100% - 32px);
+    margin: 0 auto;
+}
+
+.section { padding: var(--s-7) 0; }
+.section--sm { padding: var(--s-6) 0; }
+
+.stack { display: grid; gap: var(--s-4); }
+
+.grid-3 {
+    display: grid;
+    gap: var(--s-4);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+    .grid-3 { grid-template-columns: 1fr; }
+}
