@@ -1,0 +1,145 @@
+.about__head {
+    display: grid;
+    gap: var(--s-3);
+    align-items: start;
+}
+
+.about__actions {
+    display: flex;
+    gap: var(--s-3);
+    flex-wrap: wrap;
+    margin-top: var(--s-2);
+}
+
+/* Timeline */
+.about__timeline {
+    display: grid;
+    gap: var(--s-4);
+}
+
+.about__step {
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    gap: var(--s-4);
+    align-items: start;
+}
+
+.about__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    margin-top: 6px;
+    box-shadow: 0 0 0 6px rgba(124,92,255,0.10);
+}
+
+.about__content {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: var(--s-5);
+    box-shadow: var(--shadow-1);
+}
+
+.about__content p {
+    margin-top: var(--s-2);
+}
+
+/* Cards / grid */
+.about__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s-4);
+}
+
+.aboutCard {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: var(--s-5);
+    box-shadow: var(--shadow-1);
+}
+
+.aboutCard--wide {
+    padding: var(--s-6);
+}
+
+.aboutList {
+    list-style: none;
+    padding: 0;
+    margin: var(--s-3) 0 0;
+    display: grid;
+    gap: 10px;
+}
+
+.aboutList li {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: var(--r-sm);
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+}
+
+.aboutList__k {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.aboutList__v {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.about__ctaRow {
+    display: flex;
+    gap: var(--s-3);
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: var(--s-4);
+}
+
+.aboutHint {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.about__links {
+    display: flex;
+    gap: var(--s-4);
+    flex-wrap: wrap;
+    margin-top: var(--s-3);
+}
+
+.aboutLink {
+    color: rgba(255,255,255,0.9);
+    text-decoration: underline;
+    text-decoration-color: rgba(255,255,255,0.25);
+    text-underline-offset: 3px;
+}
+
+.aboutLink:hover {
+    text-decoration-color: rgba(255,255,255,0.6);
+}
+
+.aboutNote {
+    margin-top: var(--s-3);
+    color: var(--muted);
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .about__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about__content,
+    .aboutCard {
+        padding: var(--s-4);
+    }
+
+    .aboutList li {
+        grid-template-columns: 1fr;
+    }
+}
